@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
         try {
             TablaAFD tabla = new TablaAFD();
-            tabla.cargarDesdeArchivo("config.txt");
+            tabla.cargarArchivo("config.txt");
             Reader lector = new Reader();
             lector.read("entrada.txt", tabla);
         } catch (IOException e) {

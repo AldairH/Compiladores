@@ -6,7 +6,7 @@ class TablaAFD {
     private List<Set<Character>> grupos;
     private Set<Integer> estadosAceptacion;
 
-    public void cargarDesdeArchivo(String archivoConfig) throws IOException {
+    public void cargarArchivo(String archivoConfig) throws IOException {
         try (BufferedReader br = new BufferedReader(new FileReader(archivoConfig))) {
             String[] primeraLinea = br.readLine().split(",");
             int numEstados = Integer.parseInt(primeraLinea[0]);
@@ -43,7 +43,7 @@ class TablaAFD {
                 for (int j = 0; j < numColumnas - 1; j++) {
                     tablaTransicion[i][j] = Integer.parseInt(valores[j]);
                 }
-                if (Integer.parseInt(valores[numColumnas - 1]) == 1) {
+                if (valores[numColumnas - 1].equalsIgnoreCase("A")) {
                     estadosAceptacion.add(i);
                 }
             }
