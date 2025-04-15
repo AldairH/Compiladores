@@ -1,23 +1,23 @@
 package main.app;
 
 public enum TokenConstant {
-    PARENI(1),     // (
-    PAREND(2),     // )
-    MAS(3),       // +
-    MENOS(4),      // -
-    MULT(5),       // *
-    DIV(6),        // /
-    POT(7),        // ^
-    IGUAL(8),      // =
-    MOD(9),        // %
-    LOG(10),       // log
-    RAIZ(11),       // sqr
-    PI(12),        // PI
-    MIN(13),       // min
-    MAX(14),       // max
-    FLOAT(15),     // Números flotantes
-    INTEGER(16),   // Números enteros
-    ERROR(999);    // Errores
+    PARENI(1),
+    PAREND(2),
+    MAS(3),
+    MENOS(4),
+    MULT(5),
+    DIV(6),
+    POT(7),
+    IGUAL(8),
+    MOD(9),
+    LOG(10),
+    RAIZ(11),
+    PI(12),
+    MIN(13),
+    MAX(14),
+    FLOAT(15),
+    INTEGER(16),
+    ERROR(999);
 
     private final int value;
 
